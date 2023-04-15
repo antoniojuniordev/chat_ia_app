@@ -30,6 +30,10 @@
       "import/extensions": "off",
       "react/jsx-no-constructed-context-values": "off",
       "react/jsx-props-no-spreading": "off",
-      "import/no-extraneous-dependencies": "off"
+      "import/no-extraneous-dependencies": "off",
+      "react/react-in-jsx-scope": "off",
+      "react/jsx-no-useless-fragment": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "react-hooks/rules-of-hooks" : "off"
     }
 }
