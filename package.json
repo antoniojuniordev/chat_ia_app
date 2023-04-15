@@ -60,5 +60,15 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "lint-staged": {
+    "src/*.{ts,tsx}": [
+      "yarn lint"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
