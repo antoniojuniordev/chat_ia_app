@@ -97,14 +97,17 @@ export default function Chat() {
             keyExtractor={(_, index) => index.toString()}
             renderItem={({ item }: any) => (
               <>
-                <Styled.ViewMessage userSend={false}>
-                  <Styled.Message>
-                    {item.responseText}
-                  </Styled.Message>
-                  <Styled.Time>
-                    {formatDate(item.createdAt)}
-                  </Styled.Time>
-                </Styled.ViewMessage>
+                {item.responseText
+                  && (
+                    <Styled.ViewMessage userSend={false}>
+                      <Styled.Message>
+                        {item.responseText}
+                      </Styled.Message>
+                      <Styled.Time>
+                        {formatDate(item.createdAt)}
+                      </Styled.Time>
+                    </Styled.ViewMessage>
+                  )}
                 <Styled.ViewMessage userSend>
                   <Styled.Message>
                     {item.search}
